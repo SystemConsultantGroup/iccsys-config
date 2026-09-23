@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: iccsys-prod
+  name: iccsys
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: iccsys-prod
+      app.kubernetes.io/name: iccsys
   replicas: 1
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: iccsys-prod
+        app.kubernetes.io/name: iccsys
     spec:
       containers:
-        - image: scgskku/iccsys-prod
+        - image: scgskku/iccsys
           imagePullPolicy: Always
-          name: iccsys-prod
+          name: iccsys
           ports:
             - containerPort: 8091
           envFrom:
             - secretRef:
-                name: iccsys-prod-secret
+                name: iccsys-secret

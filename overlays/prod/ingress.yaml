@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: iccsys
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
+    nginx.ingress.kubernetes.io/proxy-body-size: "2g"
+spec:
+  tls:
+    - hosts:
+        - iccsys.skku.ac.kr
+      secretName: gitops-tls
+  rules:
+    - host: iccsys.skku.ac.kr
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: iccsys
+                port:
+                  number: 80

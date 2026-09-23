@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: iccsys-prod
+nameSuffix: -prod
+resources:
+  - ../../base
+  - namespace.yaml
+  - secret.yaml
+  - ingress.yaml
+images:
+  - name: scgskku/iccsys
+    newName: scgskku/iccsys-prod
