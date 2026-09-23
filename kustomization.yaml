@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/vqbeta1
+kind: Kustomization
+namespace: iccsys-prod
+resources:
+  - namespace.yaml
+  - secret.yaml
+  - deployment.yaml
+  - ingress.yaml
+  - service.yaml
