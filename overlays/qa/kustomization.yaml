@@ -10,4 +10,4 @@ resources:
 images:
   - name: scgskku/iccsys
     newName: scgskku/iccsys-dev
-    newTag: qa-002
+    newTag: latest
