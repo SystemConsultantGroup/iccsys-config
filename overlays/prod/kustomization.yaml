@@ -10,3 +10,4 @@ resources:
 images:
   - name: scgskku/iccsys
     newName: scgskku/iccsys-prod
+    newTag: latest

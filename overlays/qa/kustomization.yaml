@@ -9,5 +9,5 @@ resources:
   - ingress.yaml
 images:
   - name: scgskku/iccsys
-    newName: scgskku/iccsys-dev
+    newName: scgskku/iccsys-qa
     newTag: latest
