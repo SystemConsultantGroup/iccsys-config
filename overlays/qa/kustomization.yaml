@@ -9,4 +9,4 @@ resources:
   - ingress.yaml
 images:
   - name: scgskku/iccsys
-    newName: scgskku/iccsys-qa
+    newName: scgskku/iccsys-dev:qa-002
