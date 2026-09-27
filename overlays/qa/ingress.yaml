@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - qa.iccsys.skku.ac.kr
+        - qa.iccsys.scg.skku.ac.kr
       secretName: gitops-qa-tls
   rules:
-    - host: qa.iccsys.skku.ac.kr
+    - host: qa.iccsys.scg.skku.ac.kr
       http:
         paths:
           - path: /
