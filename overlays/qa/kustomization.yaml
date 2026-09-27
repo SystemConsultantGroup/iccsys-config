@@ -3,11 +3,11 @@ kind: Kustomization
 namespace: iccsys-qa
 nameSuffix: -qa
 resources:
-  - ../../base
-  - namespace.yaml
-  - secret.yaml
-  - ingress.yaml
+- ../../base
+- namespace.yaml
+- secret.yaml
+- ingress.yaml
 images:
-  - name: scgskku/iccsys
-    newName: scgskku/iccsys-qa
-    newTag: latest
+- name: scgskku/iccsys
+  newName: scgskku/iccsys-qa
+  newTag: b73407275a902f92724dc7c8bcf8e1b44b28fbfa-36334876354-1
