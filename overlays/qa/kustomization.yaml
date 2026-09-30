@@ -10,4 +10,4 @@ resources:
 images:
 - name: scgskku/iccsys
   newName: scgskku/iccsys-qa
-  newTag: d20ebac5fabb2d0611ffe44141cfff078d8147b6-36652702878-1
+  newTag: f38161c02a801c574094c3bb2625b39d7e4ba33d-36654617685-1
